@@ -1,5 +1,5 @@
 header {
-	padding: 92px 24px 96px 24px;
+	padding: 92px 50px 96px 50px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	align-items: center;
@@ -35,6 +35,9 @@ header {
 .black-logo {
 	display: flex;
 	justify-self: center;
+}
+
+.black-logo img {
 	width: 148px;
 	height: 105px;
 }
@@ -65,7 +68,7 @@ header {
 .jamboton {
 	z-index: 1;
 	position: relative;
-	padding: 173px 50px 50px 50px;
+	padding: 170px 50px 50px 30px;
 	color: #fff;
 	background-position: center;
 	background-size: cover;
@@ -116,6 +119,7 @@ header {
 }
 
 .subline {
+	margin-top: -20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -153,7 +157,7 @@ header {
 }
 
 .articles {
-	padding: 180px 24px 50px 24px;
+	padding: 180px 50px 50px 50px;
 	z-index: 1;
 }
 .lots-title {
@@ -163,7 +167,6 @@ header {
 	text-transform: uppercase;
 	color: #000;
 	margin-bottom: 27px;
-	margin-left: 40px;
 }
 
 .lots {
@@ -222,14 +225,14 @@ header {
 }
 
 .about {
-	padding: 130px 50px 90px 50px;
+	padding: 130px 24px 90px 24px;
 	column-gap: 24px;
 	display: grid;
 	grid-template-columns: min-content 1fr;
 }
 
 .white-logo {
-	margin: 0 72px 0 71px;
+	margin: 35px 0 0 47px;
 	display: flex;
 	width: 240px;
 	height: 240px;
@@ -245,12 +248,13 @@ header {
 }
 
 .about h4 {
+	margin-top: 100px;
+	margin-bottom: 100px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	font-size: 40px;
 	text-transform: uppercase;
 	color: #000;
-	margin-bottom: 100px;
 }
 
 .about p {
@@ -295,7 +299,7 @@ footer {
 
 .socials {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 }
 
 .socials img {
