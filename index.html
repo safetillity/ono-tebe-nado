@@ -11,44 +11,52 @@
 	</head>
 	<body>
 		<header>
-			<div class="menu">
-				<p>главная</p>
+			<nav class="menu">
 				<ul>
-					<li><a>посмотреть лоты</a></li>
-					<li><a>об аукционе</a></li>
+					<li class="active"><a>главная</a></li>
+					<li><a href="#">посмотреть лоты</a></li>
+					<li><a href="#">об аукционе</a></li>
 				</ul>
+			</nav>
+			<div class="black-logo">
+				<a><img src=images/logo-black.svg alt="ОноТебеНадо"/></a>
 			</div>
-			<div class="logo"><img src=images/logo-black.svg alt="ОноТебеНадо"/></div>
 			<div class="contacts">
 				<h2>
-					<a>+9 999 555 5555<br />info@sobaka.ge</a><br />
-					наб. Принсенграхт 263-<br />265,Амстердам
+					<a href="#">+9 999 555 5555<br />info@sobaka.ge</a><br />
+					<span>наб. Принсенграхт 263-<br />265,Амстердам</span>
 				</h2>
 			</div>
-			</header>
+		</header>
 		<main>
-				<section class="jamboton">
-					<div>
-					<h1>ОН О</h1>
-					<h1>ТЕБ Е</h1>
-					<h1 сlass="tilteTextGap">Н АДО</h1>
+			<section class="jamboton">
+				<div class="overlay"></div>
+				<h1>
+					<span class="start-title">ОН<span class="space">О</span></span>
+					<span class="center-title">ТЕ<span class="space">БЕ</span></span>
+					<span class="end-title"><span class="space">Н</span>АДО</span>
+				</h1>
+				<div class="subline">
 					<p>аукцион вещей, в которые никто не верил</p>
 					<button>Сделать ставку</button>
-          </div>
-				</section>
-				<section class="lots">
-					<h2>Лоты</h2>
-					<div class="lot">
-						<h3>Фильм режиссёра, который бросил <a>киношколу</a></h3>
+				</div>
+			</section>
+			<section class="articles">
+				<h2 class="lots-title">Лоты</h2>
+				<div class="lots">
+					<article class="first-lot lot">
+						<div class="overlay"></div>
+						<h3><a href="#">Фильм режиссёра, который бросил киношколу</a></h3>
 						<p>
 							Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
 							ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
 						</p>
-					</div>
-					<div class="lot">
+					</article>
+					<article class="second-lot lot">
+						<div class="overlay"></div>
 						<h3>
-							<a
-								>Книга, где описан один скучный день из жизни рекламного агента
+							<a href="#">
+								Книга, где описан один скучный день из жизни рекламного агента
 							</a>
 						</h3>
 						<p>
@@ -58,20 +66,27 @@
 							времён. И это всё накладывается на эпическую поэму Гомера. Сколько
 							бы вы поставили на «Улисса» Джеймса Джойса?
 						</p>
-					</div>
-					<div class="lot">
+					</article>
+					<article class="third-lot lot">
+						<div class="overlay"></div>
 						<h3>
-							<a>Картина, которую повторит даже 5-летний сын маминой подруги</a>
+							<a href="#"
+								>Картина, которую повторит даже 5-летний сын маминой подруги
+							</a>
 						</h3>
 						<p>
 							Сколько бы вы на такое поставили, если бы не знали, что это — одна
 							из революционных работ Кандинского?
 						</p>
-					</div>
-					<p><a>посмотреть больше</a></p>
-				</section>
-				<section class="about">
-					<img src="images/logo-black.svg" alt="ОноТебеНадо"/>
+					</article>
+				</div>
+				<span><a href="#">посмотреть больше</a></span>
+			</section>
+			<section class="about">
+				<div class="white-logo">
+					<img src=images/logo-white.svg alt="ОноТебеНадо"/>
+				</div>
+				<div>
 					<h4>об аукционе</h4>
 					<p>
 						Здесь вы не встретите очередное пафосное собрание невероятно
@@ -88,28 +103,30 @@
 						представить современную культуру. Когда в эти вещи не верил никто,
 						продолжали верить их создатели. И сейчас эти лоты стали культовыми.
 					</p>
-				</section>
-			</main>
-			<footer>
-				<div class="contacts">
-					<h2>+9 999 555 5555<br />info@sobaka.ge<br /></h2>
-					<p>наб. Принсенграхт 263-<br />265,Амстердам</p>
 				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="contacts">
+				<h2>
+					<a href="#">+9 999 555 5555<br />info@sobaka.ge</a><br />
+					<span>наб. Принсенграхт 263-<br />265,Амстердам</span>
+				</h2>
+			</div>
 
-				<div class="menu">
-					<p>главная</p>
-					<ul>
-						<li><a>посмотреть лоты</a></li>
-						<li><a>об аукционе</a></li>
-					</ul>
-				</div>
+			<nav class="footer-menu">
+				<ul>
+					<li class="active"><a>главная</a></li>
+					<li><a href="#">посмотреть лоты</a></li>
+					<li><a href="#">об аукционе</a></li>
+				</ul>
+			</nav>
 
-				<div class="socials">
-					<img src="images/yt.svg" alt="YT" />
-					<img src="images/vk.svg" alt="VK" />
-					<img src="images/pinterest.svg" alt="Pint" />
-				</div>
-			</footer>
-		
+			<div class="socials">
+				<img src="images/yt.svg" alt="YT" />
+				<img src="images/vk.svg" alt="VK" />
+				<img src="images/pinterest.svg" alt="Pint" />
+			</div>
+		</footer>
 	</body>
 </html>
