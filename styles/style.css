@@ -1,5 +1,5 @@
 header {
-	padding: 92px 50px 96px 50px;
+	padding: 101px 49px 90px 51px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	align-items: center;
@@ -33,6 +33,7 @@ header {
 }
 
 .black-logo {
+	margin-right: 80px;
 	display: flex;
 	justify-self: center;
 }
@@ -43,7 +44,7 @@ header {
 }
 
 .contacts {
-	margin: auto;
+	margin-left: 65px;
 }
 
 .contacts a {
@@ -68,7 +69,7 @@ header {
 .jamboton {
 	z-index: 1;
 	position: relative;
-	padding: 170px 50px 50px 30px;
+	padding: 170px 19px 80px 49px;
 	color: #fff;
 	background-position: center;
 	background-size: cover;
@@ -96,7 +97,7 @@ header {
 	color: #fff;
 	display: flex;
 	flex-direction: column;
-	row-gap: 25px;
+	row-gap: 9px;
 }
 
 .space {
@@ -119,14 +120,15 @@ header {
 }
 
 .subline {
-	margin-top: -20px;
+	margin-bottom: -20px;
+	margin-left: 29px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .jamboton p {
-	margin-top: 135px;
+	margin-top: 136px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 	font-size: 22px;
@@ -138,10 +140,8 @@ header {
 }
 
 .jamboton button {
-	margin-bottom: -12px;
 	display: flex;
 	align-self: flex-end;
-	justify-self: end;
 	flex-wrap: nowrap;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
@@ -149,7 +149,9 @@ header {
 	font-size: 22px;
 	text-transform: uppercase;
 	border: 1px solid #fff;
-	padding: 12px 32px;
+	padding: 15px 28px 8px 28px;
+	margin-right: 31px;
+	margin-bottom: -9px;
 	color: inherit;
 	line-height: normal;
 	background: transparent;
@@ -167,11 +169,12 @@ header {
 	text-transform: uppercase;
 	color: #000;
 	margin-bottom: 27px;
+	margin-left: 15px;
 }
 
 .lots {
 	display: flex;
-	max-height: 563px;
+	flex-wrap: wrap;
 	gap: 25px;
 	margin-bottom: 30px;
 }
@@ -183,7 +186,7 @@ header {
 	position: relative;
 	z-index: 1;
 	flex: 1 1;
-	min-height: 563px;
+	height: 563px;
 }
 
 .first-lot {
@@ -221,18 +224,19 @@ header {
 	font-size: 20px;
 	line-height: normal;
 	color: #000;
-	margin-left: 40px;
+	margin-left: 14px;
 }
 
 .about {
-	padding: 130px 24px 90px 24px;
-	column-gap: 24px;
+	padding: 135px 24px 68px 24px;
+	column-gap: 70px;
 	display: grid;
 	grid-template-columns: min-content 1fr;
 }
 
 .white-logo {
-	margin: 35px 0 0 47px;
+	margin-top: -2px;
+	margin-left: 47px;
 	display: flex;
 	width: 240px;
 	height: 240px;
@@ -272,18 +276,23 @@ footer {
 	padding: 90px 50px;
 }
 
-.footer-menu ul {
+footer .contacts {
+	margin: 0;
+}
+
+footer .menu ul {
 	display: block;
 	gap: 13px 33px;
 }
 
-.footer-menu li {
+footer .menu li {
 	text-align: center;
 	list-style: none;
 	text-decoration: underline;
+	text-underline-offset: 5px;
 }
 
-.footer-menu li a {
+footer .menu li a {
 	white-space: nowrap;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
@@ -299,6 +308,9 @@ footer {
 
 .socials {
 	display: flex;
+	flex-wrap: wrap;
+	justify-self: end;
+	gap: 20px 48px;
 	justify-content: space-around;
 }
 
