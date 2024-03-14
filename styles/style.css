@@ -1,11 +1,12 @@
-header {
-	padding: 101px 49px 90px 51px;
+.header {
+	padding: 92px 72px 92px 50px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	align-items: center;
 }
 
 .menu ul {
+	text-underline-offset: 4px;
 	flex-direction: row;
 	display: flex;
 	flex-wrap: nowrap;
@@ -32,13 +33,13 @@ header {
 	text-decoration: none;
 }
 
-.black-logo {
+.menu-logo {
 	margin-right: 80px;
 	display: flex;
 	justify-self: center;
 }
 
-.black-logo img {
+.menu-logo img {
 	width: 148px;
 	height: 105px;
 }
@@ -48,6 +49,9 @@ header {
 }
 
 .contacts a {
+	text-underline-offset: 4px;
+	display: block;
+	font-style: normal;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
@@ -57,7 +61,9 @@ header {
 	text-decoration: underline;
 }
 
-.contacts span {
+.address {
+	display: block;
+	font-style: normal;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
@@ -69,7 +75,7 @@ header {
 .jamboton {
 	z-index: 1;
 	position: relative;
-	padding: 170px 19px 80px 49px;
+	padding: 170px 20px 63px 50px;
 	color: #fff;
 	background-position: center;
 	background-size: cover;
@@ -97,7 +103,7 @@ header {
 	color: #fff;
 	display: flex;
 	flex-direction: column;
-	row-gap: 9px;
+	row-gap: 8px;
 }
 
 .space {
@@ -110,6 +116,7 @@ header {
 }
 
 .center-title {
+	margin-right: 29px;
 	display: flex;
 	align-self: center;
 }
@@ -120,7 +127,6 @@ header {
 }
 
 .subline {
-	margin-bottom: -20px;
 	margin-left: 29px;
 	display: flex;
 	justify-content: space-between;
@@ -141,17 +147,19 @@ header {
 
 .jamboton button {
 	display: flex;
-	align-self: flex-end;
+	justify-content: center;
+	align-items: center;
 	flex-wrap: nowrap;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
 	font-size: 22px;
 	text-transform: uppercase;
-	border: 1px solid #fff;
-	padding: 15px 28px 8px 28px;
+	border: 1px solid currentColor;
+	padding: 15px 28px 8px 34px;
 	margin-right: 31px;
-	margin-bottom: -9px;
+	position: relative;
+	top: 68px;
 	color: inherit;
 	line-height: normal;
 	background: transparent;
@@ -159,7 +167,7 @@ header {
 }
 
 .articles {
-	padding: 180px 50px 50px 50px;
+	padding: 180px 24px 50px 24px;
 	z-index: 1;
 }
 .lots-title {
@@ -168,8 +176,8 @@ header {
 	font-size: 40px;
 	text-transform: uppercase;
 	color: #000;
-	margin-bottom: 27px;
-	margin-left: 15px;
+	margin-bottom: 25px;
+	margin-left: 40px;
 }
 
 .lots {
@@ -179,29 +187,39 @@ header {
 	margin-bottom: 30px;
 }
 
+.lots a {
+	text-decoration: none;
+	flex: 1 1;
+}
+
 .lot {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
-	padding: 50px 40px;
+	justify-content: space-between;
+	padding: 51px 40px;
 	position: relative;
 	z-index: 1;
-	flex: 1 1;
 	height: 563px;
 }
 
-.first-lot {
+.lot-film {
 	background-image: url('../images/card-lot-01.jpg');
 }
 
-.second-lot {
+.lot-book {
 	background-image: url('../images/card-lot-02.jpg');
 }
 
-.third-lot {
+.lot-picture {
 	background-image: url('../images/card-lot-03.jpg');
 }
 
-.lots h3 {
+.lot h3 {
+	text-underline-offset: 4px;
+	text-decoration: underline;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	font-size: 22px;
@@ -210,7 +228,7 @@ header {
 	color: #fff;
 }
 
-.lots p {
+.lot p {
 	margin-top: auto;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
@@ -224,18 +242,18 @@ header {
 	font-size: 20px;
 	line-height: normal;
 	color: #000;
-	margin-left: 14px;
+	margin-left: 40px;
+	text-underline-offset: 5px;
 }
 
 .about {
-	padding: 135px 24px 68px 24px;
+	padding: 135px 24px 90px 24px;
 	column-gap: 70px;
 	display: grid;
 	grid-template-columns: min-content 1fr;
 }
 
-.white-logo {
-	margin-top: -2px;
+.about-logo {
 	margin-left: 47px;
 	display: flex;
 	width: 240px;
@@ -251,7 +269,7 @@ header {
 	height: 114px;
 }
 
-.about h4 {
+.about h2 {
 	margin-top: 100px;
 	margin-bottom: 100px;
 	font-family: 'Raleway', sans-serif;
@@ -262,7 +280,6 @@ header {
 }
 
 .about p {
-	margin-bottom: 24px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	font-size: 20px;
@@ -270,29 +287,34 @@ header {
 	color: #000;
 }
 
-footer {
+.about p + p {
+	margin-top: 23px;
+}
+
+.footer {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	padding: 90px 50px;
 }
 
-footer .contacts {
+.footer .contacts {
 	margin: 0;
 }
 
-footer .menu ul {
+.footer .menu ul {
 	display: block;
 	gap: 13px 33px;
 }
 
-footer .menu li {
+.footer .menu li {
 	text-align: center;
 	list-style: none;
 	text-decoration: underline;
 	text-underline-offset: 5px;
 }
 
-footer .menu li a {
+.footer .menu li a {
+	font-style: normal;
 	white-space: nowrap;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;

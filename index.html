@@ -5,12 +5,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-		<link rel="fonts" href="fonts/fonts.css" />
+		<link rel="stylesheet" href="fonts/fonts.css" />
 		<link rel="stylesheet" href="styles/global.css" />
 		<link rel="stylesheet" href="styles/style.css" />
 	</head>
 	<body>
-		<header>
+		<header class="header">
 			<nav class="menu">
 				<ul>
 					<li class="active"><a>главная</a></li>
@@ -18,16 +18,14 @@
 					<li><a href="#">об аукционе</a></li>
 				</ul>
 			</nav>
-			<div class="black-logo">
+			<div class="menu-logo">
 				<a><img src=images/logo-black.svg alt="ОноТебеНадо"/></a>
 			</div>
-			<div class="contacts">
-				<h2>
-					<a href="tel:+99995555555">+9 999 555 5555</a><br />
-					<a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
-					<span>наб. Принсенграхт 263-<br />265,Амстердам</span>
-				</h2>
-			</div>
+			<address class="contacts">
+				<a href="tel:+99995555555">+9 999 555 5555</a>
+				<a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+				<p class="address">наб. Принсенграхт 263-265,Амстердам</p>
+			</address>
 		</header>
 		<main>
 			<section class="jamboton">
@@ -39,56 +37,62 @@
 				</h1>
 				<div class="subline">
 					<p>аукцион вещей, в которые никто не верил</p>
-					<button>Сделать ставку</button>
+					<button type="button">Сделать ставку</button>
 				</div>
 			</section>
 			<section class="articles">
 				<h2 class="lots-title">Лоты</h2>
+
 				<div class="lots">
-					<article class="first-lot lot">
-						<div class="overlay"></div>
-						<h3><a href="#">Фильм режиссёра, который бросил киношколу</a></h3>
-						<p>
-							Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-							ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-						</p>
-					</article>
-					<article class="second-lot lot">
-						<div class="overlay"></div>
-						<h3>
-							<a href="#">
+					<a href="#">
+						<article class="lot-film lot">
+							<div class="overlay"></div>
+							<h3>Фильм режиссёра, который бросил киношколу</h3>
+							<p>
+								Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+								ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+							</p>
+						</article>
+					</a>
+					<a href="#">
+						<article class="lot-book lot">
+							<div class="overlay"></div>
+							<h3>
 								Книга, где описан один скучный день из жизни рекламного агента
-							</a>
-						</h3>
-						<p>
-							Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-							переходами на древнеанглийский. В ней одновременно рассказывается
-							о 16 июня 1904 года и об истории литературы, начиная с античных
-							времён. И это всё накладывается на эпическую поэму Гомера. Сколько
-							бы вы поставили на «Улисса» Джеймса Джойса?
-						</p>
-					</article>
-					<article class="third-lot lot">
-						<div class="overlay"></div>
-						<h3>
-							<a href="#">
+							</h3>
+							<p>
+								Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
+								переходами на древнеанглийский. В ней одновременно
+								рассказывается о 16 июня 1904 года и об истории литературы,
+								начиная с античных времён. И это всё накладывается на эпическую
+								поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
+								Джойса?
+							</p>
+						</article>
+					</a>
+					<a href="#">
+						<article class="lot-picture lot">
+							<div class="overlay"></div>
+							<h3>
 								Картина, которую повторит даже 5-летний сын маминой подруги
-							</a>
-						</h3>
-						<p>
-							Сколько бы вы на такое поставили, если бы не знали, что это — одна
-							из революционных работ Кандинского?
-						</p>
-					</article>
+							</h3>
+							<p>
+								Ну действительно, там линия, тут кружочек, а здесь и вовсе
+								что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+								котиков... Сколько бы вы на такое поставили, если бы не знали,
+								что это — одна из революционных работ Кандинского?
+							</p>
+						</article>
+					</a>
 				</div>
 				<span><a href="#">посмотреть больше</a></span>
 			</section>
 			<section class="about">
-				<div class="white-logo">
+				<div class="about-logo">
 					<img src=images/logo-white.svg alt="ОноТебеНадо"/>
 				</div>
 				<div>
-					<h4>об аукционе</h4>
+					<h2>об аукционе</h2>
 					<p>
 						Здесь вы не встретите очередное пафосное собрание невероятно
 						дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
@@ -108,14 +112,12 @@
 				</div>
 			</section>
 		</main>
-		<footer>
-			<div class="contacts">
-				<h2>
-					<a href="tel:+99995555555">+9 999 555 5555<br /></a
-					><a href="mailto:info@sobaka.ge">@sobaka.ge</a><br />
-					<span>наб. Принсенграхт 263-<br />265,Амстердам</span>
-				</h2>
-			</div>
+		<footer class="footer">
+			<address class="contacts">
+				<a href="tel:+99995555555">+9 999 555 5555</a>
+				<a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+				<p class="address">наб. Принсенграхт 263-265,Амстердам</p>
+			</address>
 			<nav class="menu">
 				<ul>
 					<li class="active"><a>главная</a></li>
@@ -124,9 +126,9 @@
 				</ul>
 			</nav>
 			<div class="socials">
-				<img src="images/yt.svg" alt="YT" />
-				<img src="images/vk.svg" alt="VK" />
-				<img src="images/pinterest.svg" alt="Pint" />
+				<a href="#"><img src="images/yt.svg" alt="YT" /></a>
+				<a href="#"><img src="images/vk.svg" alt="VK" /></a>
+				<a href="#"><img src="images/pinterest.svg" alt="Pint" /></a>
 			</div>
 		</footer>
 	</body>
