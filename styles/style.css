@@ -75,7 +75,7 @@
 .jamboton {
 	z-index: 1;
 	position: relative;
-	padding: 170px 20px 63px 50px;
+	padding: 170px 50px 64px 50px;
 	color: #fff;
 	background-position: center;
 	background-size: cover;
@@ -110,13 +110,15 @@
 	letter-spacing: 0.6em;
 }
 
+.nospace {
+	letter-spacing: 0;
+}
 .start-title {
 	display: flex;
 	align-self: start;
 }
 
 .center-title {
-	/* свойство margin здесь я использовал в предыдущей итераци не для пробела менжду буквами , а для того , чтобы сама строчка была чуть левее,  как в макете , поскольку она находится не в центре , и значения center не дают идеального результата , а разрыв между буквами в  у меня указан с помощью своства у .jamboton h1 { letter-spacing: 0.3em; }  и  .space { letter-spacing: 0.6em; } , таким образом  и получил по 30px и 60px , извините , что уточняю в комментариях , не нашел другого способа */
 	display: flex;
 	align-self: center;
 	justify-self: center;
@@ -128,14 +130,14 @@
 }
 
 .subline {
-	margin-left: 29px;
+	padding-left: 30px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .jamboton p {
-	margin-top: 136px;
+	margin-top: 135px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 	font-size: 22px;
@@ -149,7 +151,6 @@
 .jamboton button {
 	display: flex;
 	align-self: flex-end;
-	align-items: center;
 	flex-wrap: nowrap;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
@@ -157,8 +158,7 @@
 	font-size: 22px;
 	text-transform: uppercase;
 	border: 1px solid currentColor;
-	padding: 15px 28px 8px 34px;
-	margin-right: 31px;
+	padding: 15px 30px 15px 34px;
 	color: inherit;
 	line-height: normal;
 	background: transparent;
@@ -198,7 +198,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 51px 40px;
+	padding: 50px 40px;
 	position: relative;
 	z-index: 1;
 	min-height: 563px;
@@ -246,14 +246,13 @@
 }
 
 .about {
-	padding: 135px 24px 90px 24px;
+	padding: 132px 30px 91px 71px;
 	column-gap: 70px;
 	display: grid;
 	grid-template-columns: min-content 1fr;
 }
 
 .about-logo {
-	margin-left: 47px;
 	display: flex;
 	width: 240px;
 	height: 240px;
