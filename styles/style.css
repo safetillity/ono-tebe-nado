@@ -75,7 +75,7 @@
 .jamboton {
 	z-index: 1;
 	position: relative;
-	padding: 170px 50px 64px 50px;
+	padding: 170px 50px 50px 50px;
 	color: #fff;
 	background-position: center;
 	background-size: cover;
@@ -136,8 +136,8 @@
 	align-items: center;
 }
 
-.jamboton p {
-	margin-top: 135px;
+.subline p {
+	margin-top: 128px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 	font-size: 22px;
@@ -147,7 +147,9 @@
 	text-align: center;
 	word-spacing: 18px;
 }
-
+.button {
+	padding-top: 124px;
+}
 .jamboton button {
 	display: flex;
 	align-self: flex-end;
@@ -158,7 +160,7 @@
 	font-size: 22px;
 	text-transform: uppercase;
 	border: 1px solid currentColor;
-	padding: 15px 30px 15px 34px;
+	padding: 12px 30px 13px 34px;
 	color: inherit;
 	line-height: normal;
 	background: transparent;
