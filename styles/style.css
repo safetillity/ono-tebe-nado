@@ -116,9 +116,10 @@
 }
 
 .center-title {
-	margin-right: 29px;
+	/* свойство margin здесь я использовал в предыдущей итераци не для пробела менжду буквами , а для того , чтобы сама строчка была чуть левее,  как в макете , поскольку она находится не в центре , и значения center не дают идеального результата , а разрыв между буквами в  у меня указан с помощью своства у .jamboton h1 { letter-spacing: 0.3em; }  и  .space { letter-spacing: 0.6em; } , таким образом  и получил по 30px и 60px , извините , что уточняю в комментариях , не нашел другого способа */
 	display: flex;
 	align-self: center;
+	justify-self: center;
 }
 
 .end-title {
@@ -147,7 +148,7 @@
 
 .jamboton button {
 	display: flex;
-	justify-content: center;
+	align-self: flex-end;
 	align-items: center;
 	flex-wrap: nowrap;
 	text-align: center;
@@ -158,8 +159,6 @@
 	border: 1px solid currentColor;
 	padding: 15px 28px 8px 34px;
 	margin-right: 31px;
-	position: relative;
-	top: 68px;
 	color: inherit;
 	line-height: normal;
 	background: transparent;
@@ -202,7 +201,7 @@
 	padding: 51px 40px;
 	position: relative;
 	z-index: 1;
-	height: 563px;
+	min-height: 563px;
 }
 
 .lot-film {
